@@ -198,12 +198,12 @@
 
         function opentab(tabname){
             for(tablink of tablinks){
-                tablink.classlist.remove("active-link");
+                tablink.classList.remove("active-link");
             }
             for(tabcontent of tabcontents){
-                tabcontent.classlist.remove("active-tab");
+                tabcontent.classList.remove("active-tab");
             }
-            event.currentTarget.classlist.add("active-link");
+            event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
 
         }
